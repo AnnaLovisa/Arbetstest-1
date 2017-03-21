@@ -158,10 +158,6 @@ figure {
 #label-1, #label-2, .tag-section a {
   color: #b760a9; }
 
-.tag-section {
-  max-height: 118px;
-  /* fixed IE 10 bug */ }
-
 .tag-section a {
   margin-left: 10px; }
 
@@ -178,6 +174,7 @@ figure {
 
 /******** Footer ********/
 .contact, .link-section, .links-2 {
+  display: -ms-flexbox;
   display: flex;
   flex-direction: row; }
 
@@ -205,7 +202,9 @@ figure {
   font-size: 16px; }
 
 .link-section {
-  justify-content: space-between; }
+  justify-content: space-between;
+  max-height: 118px;
+  /* fixed IE 10 bug */ }
 
 .links-1 {
   align-items: flex-start; }
