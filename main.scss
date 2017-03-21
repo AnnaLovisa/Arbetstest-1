@@ -54,10 +54,9 @@ figure {
 
 
 .button-container {
-	display: -ms-flexbox;	/* Fixed IE 10 Bug */
-	display: flex;			/* Fixed IE 10 Bug */
-	-ms-flex-pack: flex-end;
+	-ms-flex-pack: justify;
 	justify-content: flex-end;		/* Fixed IE 10 Bug */
+	@include flex-row;
 	@include flex-justify;
 }
 
@@ -77,7 +76,6 @@ figure {
 
 .img-nav{
 	max-height: 20px;		/* Fixed IE 10 Bug */
-	display: -ms-flexbox;	/* Fixed IE 10 Bug */
 	@include flex-row;
 	justify-content: flex-start;
 	margin-bottom: -8px;
@@ -122,7 +120,6 @@ figure {
 
 
 .img-container, .arrow-container, .page-view, .search-img, .tags-icons, .tag-section, .media-icons {
-	display: -ms-flexbox;	/* Fixed IE 10 Bug */
 	@include flex-row;
 }
 
@@ -132,8 +129,6 @@ figure {
 }
 
 .arrow-container {
-	/*-ms-flex-align: center;		/* Fixed IE 10 Bug */
-	/*align-items: center;*/
 	@include flex-align;
 	-ms-flex-pack: center;			/* Fixed IE 10 Bug */
 	justify-content: center;		
@@ -144,14 +139,12 @@ figure {
 }
 
 .img-col, .tag-links {
-	/*display: -ms-flexbox;
-	-ms-flex-direction: column;*/
 	@include flex-row(column);
 }
 
 
 .page-view {
-	-ms-flex-pack: justify;		/* fixed IE 10 bug */
+	-ms-flex-pack: justify;		/* fixed IE 10 bug not working */
 	justify-content: flex-end;
 }
 
@@ -249,7 +242,8 @@ figure {
 .agria-ao {
 	display: -ms-flexbox;	/* fixed IE 10 bug */
 	display: flex;			/* fixed IE 10 bug */
-	@include flex-justify;
+	-ms-flex-pack: justify;		/* fixed IE 10 bug */
+	justify-content: flex-end;
 	font-family: Arial;
 }
 
@@ -265,6 +259,8 @@ figure {
 .links-2 {
 	-ms-flex-pack: center;			/* fixed IE 10 bug */
 	justify-content: center;
+	-ms-flex-pack: space-between;	/* fixed IE 10 bug */
+    justify-content: space-between;
 	width: 100%; height: 36px;
 	background-color: $color-lightgrey;
 }

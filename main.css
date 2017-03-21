@@ -52,13 +52,14 @@ figure {
   background-color: #96bde1; }
 
 .button-container {
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+  /* Fixed IE 10 Bug */
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
   display: flex;
-  /* Fixed IE 10 Bug */
-  -ms-flex-pack: flex-end;
-  justify-content: flex-end;
-  /* Fixed IE 10 Bug */
+  -ms-flex-direction: row;
+  flex-direction: row;
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
   display: flex;
@@ -77,8 +78,6 @@ figure {
 
 .img-nav {
   max-height: 20px;
-  /* Fixed IE 10 Bug */
-  display: -ms-flexbox;
   /* Fixed IE 10 Bug */
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
@@ -120,8 +119,6 @@ figure {
 .img-container, .arrow-container, .page-view, .search-img, .tags-icons, .tag-section, .media-icons {
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
-  display: -ms-flexbox;
-  /* Fixed IE 10 Bug */
   display: flex;
   -ms-flex-direction: row;
   flex-direction: row; }
@@ -133,8 +130,6 @@ figure {
   /* Fixed IE 10 Bug */ }
 
 .arrow-container {
-  /*-ms-flex-align: center;		/* Fixed IE 10 Bug */
-  /*align-items: center;*/
   -ms-flex-align: center;
   /* Fixed IE 10 Bug */
   align-items: center;
@@ -148,8 +143,6 @@ figure {
   margin: 4px; }
 
 .img-col, .tag-links {
-  /*display: -ms-flexbox;
-  -ms-flex-direction: column;*/
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
   display: flex;
@@ -158,7 +151,7 @@ figure {
 
 .page-view {
   -ms-flex-pack: justify;
-  /* fixed IE 10 bug */
+  /* fixed IE 10 bug not working */
   justify-content: flex-end; }
 
 .arrow-left, .arrow-right {
@@ -246,9 +239,8 @@ figure {
   /* fixed IE 10 bug */
   display: flex;
   /* fixed IE 10 bug */
-  display: -ms-flexbox;
-  /* Fixed IE 10 Bug */
-  display: flex;
+  -ms-flex-pack: justify;
+  /* fixed IE 10 bug */
   justify-content: flex-end;
   font-family: Arial; }
 
@@ -263,6 +255,9 @@ figure {
   -ms-flex-pack: center;
   /* fixed IE 10 bug */
   justify-content: center;
+  -ms-flex-pack: space-between;
+  /* fixed IE 10 bug */
+  justify-content: space-between;
   width: 100%;
   height: 36px;
   background-color: #e1e1e1; }
