@@ -52,10 +52,10 @@ figure {
 }
 
 
-.button-container {				/* FUNKAR INTE SKA FLYTTAS TILL HÖGER */		
+.button-container {					
 	@include flex-row;
 	@include flex-justify;
-	margin-left: 80%;			/* Temporary IE 10 Bug work around */
+	margin-left: 85%;					/* Temporary IE 10 Bug work around */
 }
 
 
@@ -73,7 +73,7 @@ figure {
 
 
 .img-nav{
-	max-height: 20px;		/* Fixed IE 10 Bug */
+	max-height: 20px;					/* Fixed IE 10 Bug */
 	@include flex-row;
 	justify-content: flex-start;
 	margin-bottom: -8px;
@@ -122,8 +122,8 @@ figure {
 }
 
 .img-container, {
-	height: 353px;			/* Fixed IE 10 Bug */
-	max-width: 950px; 		/* Fixed IE 10 Bug */
+	height: 353px;					/* Fixed IE 10 Bug */
+	max-width: 950px; 				/* Fixed IE 10 Bug */
 }
 
 .arrow-container {
@@ -141,10 +141,10 @@ figure {
 }
 
 
-.page-view {					/* FUNKAR INTE SKA FLYTTAS TILL HÖGER */
+.page-view {				
 	@include flex-row;
 	@include flex-justify;
-	margin-left: 80%;
+	margin-left: 85%;				/* Temporary work around for IE 10 bug */
 }
 
 .arrow-left, .arrow-right {
@@ -176,7 +176,7 @@ figure {
 	margin-left: 10px;
 }
 
-.media-icons {					/*GOOGLE IKONEN VISAS INTE*/
+.media-icons {				
 	align-self: flex-start;
 	margin-left: 300px;
 }
@@ -226,27 +226,26 @@ figure {
 
 }
 	
-.link-section {						/*OSÄKER PÅ OM DEN FUNKAR - SKA VARA SPACE BETWEEN I EXPLORER OCKSÅ*/
-	-ms-flex-pack: space-between;
+.link-section {						
 	justify-content: space-between;
 	max-height: 118px;				/* fixed IE 10 bug */
    -ms-flex-pack: center;			/* fixed IE 10 bug */
 }
 
 .links-1 {
-	align-items: flex-start;
-	-ms-flex-pack: space-between;	/* fixed IE 10 bug */
+	align-items: flex-start;	
 	justify-content: space-between;
+	-ms-padding: 12px;				/* Temporary work around for IE 10 bug */
 }
 
-.agria-ao {						/* FUNKAR INTE SKA FLYTTAS TILL HÖGER I IE OCKSÅ */
+.agria-ao {						
 	@include flex-row;
 	justify-content: flex-end;
-	margin-left: 80%;				
+	margin-left: 85%;				/* Temporary work around for IE 10 bug */
 	font-family: Arial;
 }
 
-.agria-ao p, .agria-ao i {		/* FUNKAR INTE SKA FLYTTAS TILL HÖGER I IE OCKSÅ */
+.agria-ao p, .agria-ao i {		
 	align-self: flex-end;
 }
 

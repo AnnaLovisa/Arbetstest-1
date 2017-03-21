@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: Arial Narrow;
   src: local("Arial Narrow"); }
@@ -53,7 +52,6 @@ figure {
   background-color: #96bde1; }
 
 .button-container {
-  /* FUNKAR INTE SKA FLYTTAS TILL H├ûGER */
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
   display: flex;
@@ -63,7 +61,7 @@ figure {
   /* Fixed IE 10 Bug */
   display: flex;
   justify-content: flex-end;
-  margin-left: 80%;
+  margin-left: 85%;
   /* Temporary IE 10 Bug work around */ }
 
 .add-img {
@@ -151,7 +149,6 @@ figure {
   flex-direction: column; }
 
 .page-view {
-  /* FUNKAR INTE SKA FLYTTAS TILL H├ûGER */
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
   display: flex;
@@ -161,7 +158,8 @@ figure {
   /* Fixed IE 10 Bug */
   display: flex;
   justify-content: flex-end;
-  margin-left: 80%; }
+  margin-left: 85%;
+  /* Temporary work around for IE 10 bug */ }
 
 .arrow-left, .arrow-right {
   position: relative;
@@ -188,7 +186,6 @@ figure {
   margin-left: 10px; }
 
 .media-icons {
-  /*GOOGLE IKONEN VISAS INTE*/
   align-self: flex-start;
   margin-left: 300px; }
 
@@ -234,8 +231,6 @@ figure {
   font-size: 16px; }
 
 .link-section {
-  /*OS├äKER P├à OM DEN FUNKAR - SKA VARA SPACE BETWEEN I EXPLORER OCKS├à*/
-  -ms-flex-pack: space-between;
   justify-content: space-between;
   max-height: 118px;
   /* fixed IE 10 bug */
@@ -244,23 +239,22 @@ figure {
 
 .links-1 {
   align-items: flex-start;
-  -ms-flex-pack: space-between;
-  /* fixed IE 10 bug */
-  justify-content: space-between; }
+  justify-content: space-between;
+  -ms-padding: 12px;
+  /* Temporary work around for IE 10 bug */ }
 
 .agria-ao {
-  /* FUNKAR INTE SKA FLYTTAS TILL H├ûGER I IE OCKS├à */
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
   display: flex;
   -ms-flex-direction: row;
   flex-direction: row;
   justify-content: flex-end;
-  margin-left: 80%;
+  margin-left: 85%;
+  /* Temporary work around for IE 10 bug */
   font-family: Arial; }
 
 .agria-ao p, .agria-ao i {
-  /* FUNKAR INTE SKA FLYTTAS TILL H├ûGER I IE OCKS├à */
   align-self: flex-end; }
 
 #hr-3 {
