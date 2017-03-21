@@ -15,7 +15,7 @@
 
 body {
 	margin: 0 auto;
-	width: 950px;
+	max-width: 950px;
 }
 
 
@@ -122,6 +122,7 @@ figure {
 
 .img-container, .arrow-container, .page-view, .search-img, .tags-icons, .tag-section, .media-icons {
 	display: -ms-flexbox;	/* Fixed IE 10 Bug */
+	display: flex;
 	@include flex-row;
 }
 

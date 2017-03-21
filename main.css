@@ -24,7 +24,7 @@
 /******** Basic Elements ********/
 body {
   margin: 0 auto;
-  width: 950px; }
+  max-width: 950px; }
 
 h1, h2, p, a, button {
   font-family: Arial, serif; }
@@ -113,6 +113,7 @@ figure {
 .img-container, .arrow-container, .page-view, .search-img, .tags-icons, .tag-section, .media-icons {
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
+  display: flex;
   display: flex;
   flex-direction: row; }
 
