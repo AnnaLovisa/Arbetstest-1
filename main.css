@@ -1,268 +1,49 @@
-@font-face {
-  font-family: Arial Narrow;
-  src: local("Arial Narrow"), local("Arial Narrow"); }
-/*********** MIXINS & VARIABLES & FONT FACE ***********/
-/******** Mixins ********/
-/******** Variables ********/
-/******** Font Face ********/
-/******** Classes for common used properties ********/
-.font-12 {
-  font-size: 12px; }
+/*
+Error: Invalid CSS after "... IE 10 bug *\/*\/": expected "{", was "}"
+        on line 237 of main.scss
 
-.font-10 {
-  font-size: 10px; }
+232: .link-section {
+233: 	-ms-flex-pack: space-between;	/* fixed IE 10 bug *\/
+234: 	justify-content: space-between;
+235: 	max-height: 118px;		/* fixed IE 10 bug *\/
+236:    /*-ms-flex-pack: center;	/* fixed IE 10 bug *\/*\/
+237: }
+238: 
+239: .links-1 {
+240: 	align-items: flex-start;
+241: 	-ms-flex-pack: space-between;	/* fixed IE 10 bug *\/
+242: 	justify-content: space-between;
 
-.upperCase {
-  text-transform: uppercase; }
-
-.noBorder {
-  border: none; }
-
-.noTextDecoration {
-  text-decoration: none; }
-
-/******** Basic Elements ********/
-body {
-  margin: 0 auto;
-  max-width: 950px; }
-
-h1, h2, p, a, button {
-  font-family: Arial, serif; }
-
-h1 {
-  font-weight: lighter;
-  margin-bottom: 0; }
-
-h2 {
-  color: #868686; }
-
-section {
-  display: inline-flex;
-  justify-content: center; }
-
-figure {
-  width: 120px;
-  height: 80px;
-  background-color: #f9f3f3;
-  margin: 4px; }
-
-/******** Header ********/
-#hr-1 {
-  height: 4px;
-  background-color: #96bde1; }
-
-.button-container {
-  -ms-flex-pack: justify;
-  justify-content: flex-end;
-  /* Fixed IE 10 Bug */
-  display: -ms-flexbox;
-  /* Fixed IE 10 Bug */
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  display: -ms-flexbox;
-  /* Fixed IE 10 Bug */
-  display: flex;
-  justify-content: flex-end; }
-
-.add-img {
-  background-color: #b760a9;
-  color: #ffffff;
-  padding: 8px;
-  border-radius: 5px; }
-
-.icon-1 {
-  width: 10px;
-  height: auto;
-  margin: 0px 5px 0px 5px; }
-
-.img-nav {
-  max-height: 20px;
-  /* Fixed IE 10 Bug */
-  display: -ms-flexbox;
-  /* Fixed IE 10 Bug */
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-bottom: -8px; }
-
-.img-alt {
-  position: relative;
-  font-size: 16px;
-  line-height: 0%;
-  width: 120px;
-  border-bottom: 20px solid #b9b8b8;
-  border-right: 10px solid #ffffff; }
-
-.img-alt:first-of-type {
-  border-bottom: 20px solid #b760a9; }
-
-.img-alt p, .img-alt i {
-  position: absolute;
-  color: #ffffff; }
-
-.img-alt p {
-  font-family: "Arial Narrow", Serif;
-  margin-left: 4px; }
-
-.img-alt i {
-  font-size: 10px;
-  padding: 4px;
-  margin-left: 100px; }
-
-#hr-2 {
-  height: 4px;
-  background-color: #b760a9; }
-
-/******** Main Content ********/
-.img-container, .arrow-container, .page-view, .search-img, .tags-icons, .tag-section, .media-icons {
-  display: -ms-flexbox;
-  /* Fixed IE 10 Bug */
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row; }
-
-.img-container {
-  height: 353px;
-  /* Fixed IE 10 Bug */
-  max-width: 950px;
-  /* Fixed IE 10 Bug */ }
-
-.arrow-container {
-  -ms-flex-align: center;
-  /* Fixed IE 10 Bug */
-  align-items: center;
-  -ms-flex-pack: center;
-  /* Fixed IE 10 Bug */
-  justify-content: center;
-  width: 20px;
-  height: 345px;
-  border-radius: 3px;
-  background-color: #e1e1e1;
-  margin: 4px; }
-
-.img-col, .tag-links {
-  display: -ms-flexbox;
-  /* Fixed IE 10 Bug */
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-
-.page-view {
-  -ms-flex-pack: justify;
-  /* fixed IE 10 bug not working */
-  justify-content: flex-end; }
-
-.arrow-left, .arrow-right {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  border: 0.5px solid grey;
-  margin: 0px 4px 0px 4px; }
-
-.arrow-left i, .arrow-right i {
-  position: absolute;
-  margin-top: -50%;
-  transform: scale(0.6); }
-
-.dropdown {
-  padding: 5px; }
-
-#label-1, #label-2, .tag-section, .page-view {
-  font-family: Arial; }
-
-#label-1, #label-2, .tag-section a {
-  color: #b760a9; }
-
-.tag-section a {
-  margin-left: 10px; }
-
-.media-icons {
-  align-self: flex-start;
-  margin-left: 300px; }
-
-.media-icons a {
-  align-self: center; }
-
-.icon {
-  width: 18px;
-  height: 18px; }
-
-/******** Footer ********/
-.contact, .link-section, .links-2 {
-  display: -ms-flexbox;
-  display: -ms-flexbox;
-  /* Fixed IE 10 Bug */
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row; }
-
-.link-section a, .agria-ao, .links-2 a {
-  color: #868686; }
-
-.links-1, .contact {
-  justify-content: space-around; }
-
-.contact, .link-section, .tags-icons {
-  margin-top: 12px; }
-
-.contact {
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  width: 100%;
-  height: 36px;
-  background-color: #0059a1; }
-
-.contact p {
-  color: #438fcc;
-  padding: 16px; }
-
-.contact p:first-of-type {
-  color: #ffffff;
-  font-size: 16px; }
-
-.link-section {
-  -ms-flex-pack: space-between;
-  /* fixed IE 10 bug */
-  justify-content: space-between;
-  max-height: 118px;
-  /* fixed IE 10 bug */
-  -ms-flex-pack: center;
-  /* fixed IE 10 bug */ }
-
-.links-1 {
-  align-items: flex-start;
-  -ms-flex-pack: space-between;
-  /* fixed IE 10 bug */
-  justify-content: space-between; }
-
-.agria-ao {
-  display: -ms-flexbox;
-  /* fixed IE 10 bug */
-  display: flex;
-  /* fixed IE 10 bug */
-  -ms-flex-pack: justify;
-  /* fixed IE 10 bug */
-  justify-content: flex-end;
-  font-family: Arial; }
-
-.agria-ao p, .agria-ao i {
-  align-self: flex-end; }
-
-#hr-3 {
-  height: 2px;
-  background-color: #0059a1; }
-
-.links-2 {
-  -ms-flex-pack: center;
-  /* fixed IE 10 bug */
-  justify-content: center;
-  width: 100%;
-  height: 36px;
-  background-color: #e1e1e1; }
-
-.links-2 a {
-  padding: 5px; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+main.scss:237
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"... IE 10 bug */*/\": expected \"{\", was \"}\"\A         on line 237 of main.scss\A \A 232: .link-section {\A 233: 	-ms-flex-pack: space-between;	/* fixed IE 10 bug */\A 234: 	justify-content: space-between;\A 235: 	max-height: 118px;		/* fixed IE 10 bug */\A 236:    /*-ms-flex-pack: center;	/* fixed IE 10 bug */*/\A 237: }\A 238: \A 239: .links-1 {\A 240: 	align-items: flex-start;\A 241: 	-ms-flex-pack: space-between;	/* fixed IE 10 bug */\A 242: 	justify-content: space-between;"; }

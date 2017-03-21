@@ -220,6 +220,7 @@ figure {
 .contact p {
 	color: $color-blue;
 	padding: 16px;
+	@include flex-align;
 }
 
 .contact p:first-of-type{
@@ -232,7 +233,7 @@ figure {
 	-ms-flex-pack: space-between;	/* fixed IE 10 bug */
 	justify-content: space-between;
 	max-height: 118px;		/* fixed IE 10 bug */
-   -ms-flex-pack: center;	/* fixed IE 10 bug */
+   /*-ms-flex-pack: center;	/* fixed IE 10 bug */*/
 }
 
 .links-1 {
@@ -261,6 +262,7 @@ figure {
 .links-2 {
 	-ms-flex-pack: center;			/* fixed IE 10 bug */
 	justify-content: center;
+	@include flex-align;
 	width: 100%; height: 36px;
 	background-color: $color-lightgrey;
 }
