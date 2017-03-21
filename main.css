@@ -53,7 +53,9 @@ figure {
 
 .button-container {
   display: -ms-flexbox;
+  /* Fixed IE 10 Bug */
   display: flex;
+  /* Fixed IE 10 Bug */
   -ms-flex-pack: flex-end;
   display: flex;
   justify-content: flex-end; }
@@ -71,7 +73,9 @@ figure {
 
 .img-nav {
   max-height: 20px;
+  /* Fixed IE 10 Bug */
   display: -ms-flexbox;
+  /* Fixed IE 10 Bug */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -108,6 +112,7 @@ figure {
 /******** Main Content ********/
 .img-container, .arrow-container, .page-view, .search-img, .tags-icons, .tag-section, .media-icons {
   display: -ms-flexbox;
+  /* Fixed IE 10 Bug */
   display: flex;
   flex-direction: row; }
 
@@ -125,6 +130,7 @@ figure {
   margin: 4px; }
 
 .img-col, .tag-links {
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column; }
 
@@ -151,6 +157,10 @@ figure {
 
 #label-1, #label-2, .tag-section a {
   color: #b760a9; }
+
+.tag-section {
+  max-height: 118px;
+  /* fixed IE 10 bug */ }
 
 .tag-section a {
   margin-left: 10px; }
