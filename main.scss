@@ -126,7 +126,8 @@ figure {
 }
 
 .img-container, {
-	max-height: 353px;		/* Fixed IE 10 Bug */ 
+	max-height: 353px;		/* Fixed IE 10 Bug */
+	max-width: 100%; 
 }
 
 .arrow-container {
@@ -236,6 +237,8 @@ figure {
 }
 
 .agria-ao {
+	display: -ms-flexbox;	/* fixed IE 10 bug */
+	display: flex;			/* fixed IE 10 bug */
 	@include flex-justify;
 	font-family: Arial;
 }
