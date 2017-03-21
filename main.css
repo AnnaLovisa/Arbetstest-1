@@ -61,7 +61,7 @@ figure {
   /* Fixed IE 10 Bug */
   display: flex;
   justify-content: flex-end;
-  margin-left: 85%;
+  margin-left: 86%;
   /* Temporary IE 10 Bug work around */ }
 
 .add-img {
@@ -158,7 +158,7 @@ figure {
   /* Fixed IE 10 Bug */
   display: flex;
   justify-content: flex-end;
-  margin-left: 85%;
+  margin-left: 86%;
   /* Temporary work around for IE 10 bug */ }
 
 .arrow-left, .arrow-right {
@@ -250,7 +250,7 @@ figure {
   -ms-flex-direction: row;
   flex-direction: row;
   justify-content: flex-end;
-  margin-left: 85%;
+  margin-left: 86%;
   /* Temporary work around for IE 10 bug */
   font-family: Arial; }
 

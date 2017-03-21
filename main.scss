@@ -55,7 +55,7 @@ figure {
 .button-container {					
 	@include flex-row;
 	@include flex-justify;
-	margin-left: 85%;					/* Temporary IE 10 Bug work around */
+	margin-left: 86%;					/* Temporary IE 10 Bug work around */
 }
 
 
@@ -144,7 +144,7 @@ figure {
 .page-view {				
 	@include flex-row;
 	@include flex-justify;
-	margin-left: 85%;				/* Temporary work around for IE 10 bug */
+	margin-left: 86%;				/* Temporary work around for IE 10 bug */
 }
 
 .arrow-left, .arrow-right {
@@ -241,7 +241,7 @@ figure {
 .agria-ao {						
 	@include flex-row;
 	justify-content: flex-end;
-	margin-left: 85%;				/* Temporary work around for IE 10 bug */
+	margin-left: 86%;				/* Temporary work around for IE 10 bug */
 	font-family: Arial;
 }
 
