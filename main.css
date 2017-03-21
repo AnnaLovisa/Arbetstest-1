@@ -67,6 +67,7 @@ figure {
   margin: 0px 5px 0px 5px; }
 
 .img-nav {
+  max-height: 100px;
   display: flex;
   justify-content: flex-start;
   margin-bottom: -8px; }
