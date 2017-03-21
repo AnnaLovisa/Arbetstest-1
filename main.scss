@@ -57,6 +57,7 @@ figure {
 	display: -ms-flexbox;	/* Fixed IE 10 Bug */
 	display: flex;			/* Fixed IE 10 Bug */
 	-ms-flex-pack: flex-end;
+	-ms-flex-direction: flex-end;		/* Fixed IE 10 Bug */
 	@include flex-justify;
 }
 
@@ -127,7 +128,7 @@ figure {
 }
 
 .img-container, {
-	height: 353px;		/* Fixed IE 10 Bug */
+	height: 353px;			/* Fixed IE 10 Bug */
 	max-width: 950px; 		/* Fixed IE 10 Bug */
 }
 
@@ -232,6 +233,7 @@ figure {
 .link-section {
 	justify-content: space-between;
 	max-height: 118px;		/* fixed IE 10 bug */
+   -ms-flex-pack: center;	/* fixed IE 10 bug */
 }
 
 .links-1 {
