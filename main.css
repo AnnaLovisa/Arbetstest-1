@@ -52,6 +52,7 @@ figure {
   background-color: #96bde1; }
 
 .button-container {
+  display: -ms-flexbox;
   display: flex;
   justify-content: flex-end; }
 
@@ -68,6 +69,7 @@ figure {
 
 .img-nav {
   max-height: 20px;
+  display: -ms-flexbox;
   display: -ms-flexbox;
   display: flex;
   flex-direction: row;
@@ -104,6 +106,7 @@ figure {
 
 /******** Main Content ********/
 .img-container, .arrow-container, .page-view, .search-img, .tags-icons, .tag-section, .media-icons {
+  display: -ms-flexbox;
   display: flex;
   flex-direction: row; }
 
@@ -117,6 +120,7 @@ figure {
   margin: 4px; }
 
 .img-col, .tag-links {
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column; }
 
@@ -160,6 +164,7 @@ figure {
 
 /******** Footer ********/
 .contact, .link-section, .links-2 {
+  display: -ms-flexbox;
   display: flex;
   flex-direction: row; }
 
@@ -193,6 +198,7 @@ figure {
   align-items: flex-start; }
 
 .agria-ao {
+  display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
   font-family: Arial; }
