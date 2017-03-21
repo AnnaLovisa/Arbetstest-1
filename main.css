@@ -62,7 +62,9 @@ figure {
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin-left: 80%;
+  /* Temporary IE 10 Bug work around */ }
 
 .add-img {
   background-color: #b760a9;
@@ -158,7 +160,8 @@ figure {
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin-left: 80%; }
 
 .arrow-left, .arrow-right {
   position: relative;
@@ -253,6 +256,7 @@ figure {
   -ms-flex-direction: row;
   flex-direction: row;
   justify-content: flex-end;
+  margin-left: 80%;
   font-family: Arial; }
 
 .agria-ao p, .agria-ao i {

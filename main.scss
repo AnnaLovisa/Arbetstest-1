@@ -55,6 +55,7 @@ figure {
 .button-container {				/* FUNKAR INTE SKA FLYTTAS TILL HÖGER */		
 	@include flex-row;
 	@include flex-justify;
+	margin-left: 80%;			/* Temporary IE 10 Bug work around */
 }
 
 
@@ -143,6 +144,7 @@ figure {
 .page-view {					/* FUNKAR INTE SKA FLYTTAS TILL HÖGER */
 	@include flex-row;
 	@include flex-justify;
+	margin-left: 80%;
 }
 
 .arrow-left, .arrow-right {
@@ -227,8 +229,8 @@ figure {
 .link-section {						/*OSÄKER PÅ OM DEN FUNKAR - SKA VARA SPACE BETWEEN I EXPLORER OCKSÅ*/
 	-ms-flex-pack: space-between;
 	justify-content: space-between;
-	max-height: 118px;		/* fixed IE 10 bug */
-   -ms-flex-pack: center;	/* fixed IE 10 bug */
+	max-height: 118px;				/* fixed IE 10 bug */
+   -ms-flex-pack: center;			/* fixed IE 10 bug */
 }
 
 .links-1 {
@@ -237,9 +239,10 @@ figure {
 	justify-content: space-between;
 }
 
-.agria-ao {				/* FUNKAR INTE SKA FLYTTAS TILL HÖGER I IE OCKSÅ */
+.agria-ao {						/* FUNKAR INTE SKA FLYTTAS TILL HÖGER I IE OCKSÅ */
 	@include flex-row;
-	justify-content: flex-end;				
+	justify-content: flex-end;
+	margin-left: 80%;				
 	font-family: Arial;
 }
 
