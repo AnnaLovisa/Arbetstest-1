@@ -57,7 +57,7 @@ figure {
   display: flex;
   /* Fixed IE 10 Bug */
   -ms-flex-pack: flex-end;
-  -ms-flex-direction: flex-end;
+  justify-content: flex-end;
   /* Fixed IE 10 Bug */
   display: flex;
   justify-content: flex-end; }
@@ -126,8 +126,12 @@ figure {
   /* Fixed IE 10 Bug */ }
 
 .arrow-container {
+  -ms-flex-align: center;
+  /* Fixed IE 10 Bug */
   align-items: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  /* Fixed IE 10 Bug */
   width: 20px;
   height: 345px;
   border-radius: 3px;
@@ -141,6 +145,8 @@ figure {
   flex-direction: column; }
 
 .page-view {
+  -ms-flex-pack: flex-end;
+  /* fixed IE 10 bug */
   justify-content: flex-end; }
 
 .arrow-left, .arrow-right {
@@ -194,6 +200,7 @@ figure {
   margin-top: 12px; }
 
 .contact {
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 36px;
@@ -208,6 +215,8 @@ figure {
   font-size: 16px; }
 
 .link-section {
+  -ms-flex-pack: space-between;
+  /* fixed IE 10 bug */
   justify-content: space-between;
   max-height: 118px;
   /* fixed IE 10 bug */
@@ -234,6 +243,9 @@ figure {
   background-color: #0059a1; }
 
 .links-2 {
+  -ms-flex-pack: center;
+  /* fixed IE 10 bug */
+  justify-content: center;
   width: 100%;
   height: 36px;
   background-color: #e1e1e1; }
