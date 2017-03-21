@@ -1,6 +1,7 @@
+@charset "UTF-8";
 @font-face {
   font-family: Arial Narrow;
-  src: local("Arial Narrow"), local("Arial Narrow"); }
+  src: local("Arial Narrow"); }
 /*********** MIXINS & VARIABLES & FONT FACE ***********/
 /******** Mixins ********/
 /******** Variables ********/
@@ -52,9 +53,7 @@ figure {
   background-color: #96bde1; }
 
 .button-container {
-  -ms-flex-pack: justify;
-  justify-content: flex-end;
-  /* Fixed IE 10 Bug */
+  /* FUNKAR INTE SKA FLYTTAS TILL H├ûGER */
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
   display: flex;
@@ -63,7 +62,9 @@ figure {
   display: -ms-flexbox;
   /* Fixed IE 10 Bug */
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin-left: 80%;
+  /* Temporary IE 10 Bug work around */ }
 
 .add-img {
   background-color: #b760a9;
@@ -150,9 +151,17 @@ figure {
   flex-direction: column; }
 
 .page-view {
-  -ms-flex-pack: justify;
-  /* fixed IE 10 bug not working */
-  justify-content: flex-end; }
+  /* FUNKAR INTE SKA FLYTTAS TILL H├ûGER */
+  display: -ms-flexbox;
+  /* Fixed IE 10 Bug */
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -ms-flexbox;
+  /* Fixed IE 10 Bug */
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 80%; }
 
 .arrow-left, .arrow-right {
   position: relative;
@@ -179,6 +188,7 @@ figure {
   margin-left: 10px; }
 
 .media-icons {
+  /*GOOGLE IKONEN VISAS INTE*/
   align-self: flex-start;
   margin-left: 300px; }
 
@@ -208,11 +218,12 @@ figure {
   margin-top: 12px; }
 
 .contact {
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
+  -ms-flex-align: center;
+  /* Fixed IE 10 Bug */
+  align-items: center;
+  background-color: #0059a1;
   width: 100%;
-  height: 36px;
-  background-color: #0059a1; }
+  height: 36px; }
 
 .contact p {
   color: #438fcc;
@@ -223,8 +234,8 @@ figure {
   font-size: 16px; }
 
 .link-section {
+  /*OS├äKER P├à OM DEN FUNKAR - SKA VARA SPACE BETWEEN I EXPLORER OCKS├à*/
   -ms-flex-pack: space-between;
-  /* fixed IE 10 bug */
   justify-content: space-between;
   max-height: 118px;
   /* fixed IE 10 bug */
@@ -238,16 +249,18 @@ figure {
   justify-content: space-between; }
 
 .agria-ao {
+  /* FUNKAR INTE SKA FLYTTAS TILL H├ûGER I IE OCKS├à */
   display: -ms-flexbox;
-  /* fixed IE 10 bug */
+  /* Fixed IE 10 Bug */
   display: flex;
-  /* fixed IE 10 bug */
-  -ms-flex-pack: justify;
-  /* fixed IE 10 bug */
+  -ms-flex-direction: row;
+  flex-direction: row;
   justify-content: flex-end;
+  margin-left: 80%;
   font-family: Arial; }
 
 .agria-ao p, .agria-ao i {
+  /* FUNKAR INTE SKA FLYTTAS TILL H├ûGER I IE OCKS├à */
   align-self: flex-end; }
 
 #hr-3 {
@@ -258,6 +271,9 @@ figure {
   -ms-flex-pack: center;
   /* fixed IE 10 bug */
   justify-content: center;
+  -ms-flex-align: center;
+  /* Fixed IE 10 Bug */
+  align-items: center;
   width: 100%;
   height: 36px;
   background-color: #e1e1e1; }
