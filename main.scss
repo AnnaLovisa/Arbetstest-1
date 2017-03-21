@@ -172,10 +172,6 @@ figure {
 	color: $color-pink;
 }
 
-.tag-section {		
-	max-height: 118px;		/* fixed IE 10 bug */
-}
-
 .tag-section a, {
 	margin-left: 10px;
 }
@@ -197,6 +193,7 @@ figure {
 /******** Footer ********/
 
 .contact, .link-section, .links-2 {
+	display: -ms-flexbox;
 	@include flex-row;
 }
 
@@ -231,7 +228,7 @@ figure {
 
 .link-section {
 	justify-content: space-between;
-
+	max-height: 118px;		/* fixed IE 10 bug */
 }
 
 .links-1 {
