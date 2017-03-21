@@ -68,9 +68,8 @@ figure {
 
 .img-nav {
   max-height: 20px;
-  width: 100%;
-  display: -ie-flex;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   margin-bottom: -8px; }
 
