@@ -118,7 +118,7 @@ figure {
   flex-direction: row; }
 
 .img-container {
-  max-height: 353px;
+  height: 353px;
   /* Fixed IE 10 Bug */
   max-width: 950px;
   /* Fixed IE 10 Bug */ }
@@ -134,6 +134,7 @@ figure {
 
 .img-col, .tag-links {
   display: -ms-flexbox;
+  flex-direction: -ms-column;
   display: flex;
   flex-direction: column; }
 
