@@ -1,0 +1,53 @@
+
+/*********** MIXINS & VARIABLES & FONT FACE ***********/
+
+
+/******** Mixins ********/
+
+@mixin flex-row($direction: row) {
+	display: flex;
+	flex-direction: $direction;
+}
+
+@mixin flex-justify($justify-content: flex-end) {
+	display: flex;
+	justify-content: $justify-content;
+}
+
+/******** Variables ********/
+
+$color-grey: #868686;
+$color-white: #ffffff;
+$color-darkblue: #0059a1;
+$color-blue: #438fcc;
+$color-pink: #b760a9;
+$color-lightgrey: #e1e1e1;
+$color-lightblue: #96bde1;
+$color-darkgrey: #b9b8b8;
+
+
+/******** Font Face ********/
+
+
+
+/******** Classes for common used properties ********/
+
+.font-12 {
+	font-size: 12px;
+}
+
+.font-10 {
+	font-size: 10px;
+}
+
+.upperCase {
+	text-transform: uppercase;
+}
+
+.noBorder {
+	border: none;
+}
+
+.noTextDecoration {
+	text-decoration: none;
+}

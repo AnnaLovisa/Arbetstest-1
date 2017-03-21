@@ -1,0 +1,250 @@
+
+// ======================== AGRIA TEST  ======================== //
+
+@font-face {
+  font-family: Arial Narrow;
+  src: local("Arial Narrow"),
+       local("Arial Narrow"),
+}
+
+
+@import "mixinsVariables";
+
+
+/******** Basic Elements ********/
+
+body {
+	margin: 0 auto;
+	width: 950px;
+}
+
+
+ h1, h2, p, a, button {
+	font-family: Arial, serif;
+}
+
+h1 {
+	font-weight: lighter;
+	margin-bottom: 0;
+}
+
+
+h2 {
+	color: $color-grey;
+}
+
+section {
+	display: inline-flex;
+	justify-content: center;
+}
+
+figure {
+	width: 120px; height: 80px;
+	background-color: #f9f3f3;
+	margin: 4px;
+}
+
+
+/******** Header ********/
+
+#hr-1 {
+	height: 4px;
+	background-color: $color-lightblue;
+}
+
+
+.button-container {
+	@include flex-justify;
+}
+
+
+.add-img {
+	background-color: $color-pink;
+	color: $color-white;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.icon-1 {
+	width: 10px; height: auto;
+	margin: 0px 5px 0px 5px;
+}
+
+
+.img-nav{
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: -8px;
+}
+
+
+.img-alt {
+	position: relative;
+	font-size: 16px; line-height: 0%; width: 120px;
+	border-bottom: 20px solid $color-darkgrey;
+	border-right: 10px solid $color-white;
+}
+
+.img-alt:first-of-type {
+	border-bottom: 20px solid $color-pink;
+}
+
+.img-alt p, .img-alt i {
+	position: absolute;
+	color: $color-white;
+}
+
+.img-alt p {
+	font-family: "Arial Narrow", Serif;
+	margin-left: 4px;
+}
+
+.img-alt i {
+	font-size: 10px;
+	padding: 4px;
+	margin-left: 100px;
+}
+
+
+#hr-2 {
+	height: 4px;
+	background-color: $color-pink;
+}
+
+
+/******** Main Content ********/
+
+
+.img-container, .arrow-container, .page-view, .search-img, .tags-icons, .tag-section, .media-icons {
+	@include flex-row;
+}
+
+.arrow-container {
+	align-items: center;justify-content: center;
+	width: 20px; height: 345px;
+	border-radius: 3px;
+	background-color: $color-lightgrey;
+	margin: 4px;
+}
+
+.img-col, .tag-links {
+	@include flex-row(column);
+}
+
+
+.page-view {
+	justify-content: flex-end;
+}
+
+.arrow-left, .arrow-right {
+	position: relative;
+	width: 16px; height: 16px;
+	border: 0.5px solid grey;
+	margin: 0px 4px 0px 4px;
+}
+
+.arrow-left i, .arrow-right i {
+	position: absolute;
+	margin-top: -50%;
+	transform: scale(0.6);
+}
+
+.dropdown {
+	padding: 5px;
+}
+
+#label-1, #label-2, .tag-section, .page-view {
+	font-family: Arial;
+}
+
+#label-1, #label-2, .tag-section a {
+	color: $color-pink;
+}
+
+.tag-section a, {
+	margin-left: 10px;
+}
+
+.media-icons {
+	align-self: flex-start;
+	margin-left: 300px;
+}
+
+.media-icons a {
+	align-self: center;
+}
+
+.icon {
+	width: 18px; height: 18px;
+}
+
+
+/******** Footer ********/
+
+.contact, .link-section, .links-2 {
+	@include flex-row;
+}
+
+.link-section a, .agria-ao, .links-2 a {
+	color: $color-grey;
+}
+
+.links-1, .contact {
+	justify-content: space-around;
+}
+
+.contact, .link-section, .tags-icons {
+	margin-top: 12px;
+}
+
+.contact {	
+	align-items: center;
+	width: 100%; height: 36px;
+	background-color: $color-darkblue;
+}
+
+.contact p {
+	color: $color-blue;
+	padding: 16px;
+}
+
+.contact p:first-of-type{
+	color: $color-white;
+	font-size: 16px;
+
+}
+
+.link-section {
+	justify-content: space-between;
+
+}
+
+.links-1 {
+	align-items: flex-start;
+}
+
+.agria-ao {
+	@include flex-justify;
+	font-family: Arial;
+}
+
+.agria-ao i {
+	align-self: flex-end;
+}
+
+#hr-3 {
+	height: 2px;
+	background-color: $color-darkblue;
+}
+
+.links-2 {
+	width: 100%; height: 36px;
+	background-color: $color-lightgrey;
+}
+
+.links-2 a {
+	padding: 5px;
+}
+
+
+
