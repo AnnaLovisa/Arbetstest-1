@@ -7,7 +7,7 @@
 @mixin flex-row($direction: row) {
 	display: -ms-flexbox;		/* Fixed IE 10 Bug */
 	display: flex;
-	-ms-flex-direction: $direction;
+	-ms-flex-direction: $direction;		/* Fixed IE 10 Bug */
 	flex-direction: $direction;
 }
 
@@ -22,7 +22,7 @@
 	align-items: center;
 }
 
-/******** Variables ********/
+/******** Variables for colors ********/
 
 $color-grey: #868686;
 $color-white: #ffffff;
