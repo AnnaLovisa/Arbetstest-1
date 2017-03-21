@@ -53,6 +53,7 @@ figure {
 
 .button-container {
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: flex-end;
   display: flex;
   justify-content: flex-end; }
