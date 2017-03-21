@@ -57,6 +57,8 @@ figure {
   display: flex;
   /* Fixed IE 10 Bug */
   -ms-flex-pack: flex-end;
+  -ms-flex-direction: flex-end;
+  /* Fixed IE 10 Bug */
   display: flex;
   justify-content: flex-end; }
 
@@ -208,6 +210,8 @@ figure {
 .link-section {
   justify-content: space-between;
   max-height: 118px;
+  /* fixed IE 10 bug */
+  -ms-flex-pack: center;
   /* fixed IE 10 bug */ }
 
 .links-1 {
