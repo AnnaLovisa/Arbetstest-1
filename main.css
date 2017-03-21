@@ -54,8 +54,7 @@ figure {
 .button-container {
   display: -ms-flexbox;
   -ms-flex-pack: flex-end;
-  display: flex;
-  justify-content: flex-end; }
+  /*@include flex-justify;*/ }
 
 .add-img {
   background-color: #b760a9;

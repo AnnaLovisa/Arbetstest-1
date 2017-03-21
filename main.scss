@@ -56,7 +56,7 @@ figure {
 .button-container {
 	display: -ms-flexbox;
 	-ms-flex-pack: flex-end;
-	@include flex-justify;
+	/*@include flex-justify;*/
 }
 
 
