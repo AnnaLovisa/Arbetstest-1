@@ -56,7 +56,7 @@ figure {
   /* Fixed IE 10 Bug */
   display: flex;
   /* Fixed IE 10 Bug */
-  -ms-flex-pack: flex-end;
+  -ms-flex-pack: justify;
   justify-content: flex-end;
   /* Fixed IE 10 Bug */
   display: -ms-flexbox;
@@ -246,9 +246,8 @@ figure {
   /* fixed IE 10 bug */
   display: flex;
   /* fixed IE 10 bug */
-  display: -ms-flexbox;
-  /* Fixed IE 10 Bug */
-  display: flex;
+  -ms-flex-pack: justify;
+  /* fixed IE 10 bug */
   justify-content: flex-end;
   font-family: Arial; }
 

@@ -56,7 +56,7 @@ figure {
 .button-container {
 	display: -ms-flexbox;	/* Fixed IE 10 Bug */
 	display: flex;			/* Fixed IE 10 Bug */
-	-ms-flex-pack: flex-end;
+	-ms-flex-pack: justify;
 	justify-content: flex-end;		/* Fixed IE 10 Bug */
 	@include flex-justify;
 }
@@ -249,7 +249,8 @@ figure {
 .agria-ao {
 	display: -ms-flexbox;	/* fixed IE 10 bug */
 	display: flex;			/* fixed IE 10 bug */
-	@include flex-justify;
+	-ms-flex-pack: justify;		/* fixed IE 10 bug */
+	justify-content: flex-end;
 	font-family: Arial;
 }
 
