@@ -237,6 +237,8 @@ figure {
 
 .links-1 {
 	align-items: flex-start;
+	-ms-flex-pack: space-between;	/* fixed IE 10 bug */
+	justify-content: space-between;
 }
 
 .agria-ao {
@@ -259,8 +261,6 @@ figure {
 .links-2 {
 	-ms-flex-pack: center;			/* fixed IE 10 bug */
 	justify-content: center;
-	-ms-flex-pack: space-between;	/* fixed IE 10 bug */
-    justify-content: space-between;
 	width: 100%; height: 36px;
 	background-color: $color-lightgrey;
 }
