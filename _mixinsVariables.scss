@@ -5,13 +5,11 @@
 /******** Mixins ********/
 
 @mixin flex-row($direction: row) {
-	display: -ms-flexbox;
 	display: flex;
 	flex-direction: $direction;
 }
 
 @mixin flex-justify($justify-content: flex-end) {
-	display: -ms-flexbox;
 	display: flex;
 	justify-content: $justify-content;
 }
