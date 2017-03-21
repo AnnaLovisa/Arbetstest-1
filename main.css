@@ -107,8 +107,13 @@ figure {
 
 /******** Main Content ********/
 .img-container, .arrow-container, .page-view, .search-img, .tags-icons, .tag-section, .media-icons {
+  display: -ms-flexbox;
   display: flex;
   flex-direction: row; }
+
+.img-container {
+  max-height: 353px;
+  /* Fixed IE 10 Bug */ }
 
 .arrow-container {
   align-items: center;
