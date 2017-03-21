@@ -211,8 +211,8 @@ figure {
 }
 
 .contact {
-	-ms-flex-align: center;	
-	align-items: center;
+	-ms-flex-align: flex-start;	
+	align-items: flex-start;
 	width: 100%; height: 36px;
 	background-color: $color-darkblue;
 }
@@ -247,7 +247,7 @@ figure {
 	font-family: Arial;
 }
 
-.agria-ao i {
+.agria-ao p, .agria-ao i {
 	align-self: flex-end;
 }
 
