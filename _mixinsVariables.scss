@@ -5,13 +5,21 @@
 /******** Mixins ********/
 
 @mixin flex-row($direction: row) {
+	display: -ms-flexbox;		/* Fixed IE 10 Bug */
 	display: flex;
+	-ms-flex-direction: $direction;
 	flex-direction: $direction;
 }
 
 @mixin flex-justify($justify-content: flex-end) {
+	display: -ms-flexbox;		/* Fixed IE 10 Bug */
 	display: flex;
 	justify-content: $justify-content;
+}
+
+@mixin flex-align($flex-align: center) {
+	-ms-flex-align: center;		/* Fixed IE 10 Bug */
+	align-items: center;
 }
 
 /******** Variables ********/
