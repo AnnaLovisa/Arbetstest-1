@@ -57,7 +57,7 @@ figure {
 	display: -ms-flexbox;	/* Fixed IE 10 Bug */
 	display: flex;			/* Fixed IE 10 Bug */
 	-ms-flex-pack: flex-end;
-	-ms-flex-direction: flex-end;		/* Fixed IE 10 Bug */
+	justify-content: flex-end;		/* Fixed IE 10 Bug */
 	@include flex-justify;
 }
 
@@ -133,7 +133,10 @@ figure {
 }
 
 .arrow-container {
-	align-items: center; justify-content: center;
+	-ms-flex-align: center;		/* Fixed IE 10 Bug */
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;		/* Fixed IE 10 Bug */
 	width: 20px; height: 345px;
 	border-radius: 3px;
 	background-color: $color-lightgrey;
@@ -148,6 +151,7 @@ figure {
 
 
 .page-view {
+	-ms-flex-pack: flex-end;					/* fixed IE 10 bug */
 	justify-content: flex-end;
 }
 
@@ -213,7 +217,8 @@ figure {
 	margin-top: 12px;
 }
 
-.contact {	
+.contact {
+	-ms-flex-align: center;	
 	align-items: center;
 	width: 100%; height: 36px;
 	background-color: $color-darkblue;
@@ -231,6 +236,7 @@ figure {
 }
 
 .link-section {
+	-ms-flex-pack: space-between;	/* fixed IE 10 bug */
 	justify-content: space-between;
 	max-height: 118px;		/* fixed IE 10 bug */
    -ms-flex-pack: center;	/* fixed IE 10 bug */
@@ -257,6 +263,8 @@ figure {
 }
 
 .links-2 {
+	-ms-flex-pack: center;			/* fixed IE 10 bug */
+	justify-content: center;
 	width: 100%; height: 36px;
 	background-color: $color-lightgrey;
 }
