@@ -54,8 +54,8 @@ figure {
 
 
 .button-container {
-	display: -ms-flexbox;
-	display: flex;
+	display: -ms-flexbox;	/* Fixed IE 10 Bug */
+	display: flex;			/* Fixed IE 10 Bug */
 	-ms-flex-pack: flex-end;
 	@include flex-justify;
 }
@@ -75,8 +75,8 @@ figure {
 
 
 .img-nav{
-	max-height: 20px;
-	display: -ms-flexbox;
+	max-height: 20px;		/* Fixed IE 10 Bug */
+	display: -ms-flexbox;	/* Fixed IE 10 Bug */
 	@include flex-row;
 	justify-content: flex-start;
 	margin-bottom: -8px;
@@ -121,16 +121,16 @@ figure {
 
 
 .img-container, .arrow-container, .page-view, .search-img, .tags-icons, .tag-section, .media-icons {
-	display: -ms-flexbox;
+	display: -ms-flexbox;	/* Fixed IE 10 Bug */
 	@include flex-row;
 }
 
-.img-container {
-	max-height: 353px;	/* Fixed IE 10 Bug */ 
+.img-container, {
+	max-height: 353px;		/* Fixed IE 10 Bug */ 
 }
 
 .arrow-container {
-	align-items: center;justify-content: center;
+	align-items: center; justify-content: center;
 	width: 20px; height: 345px;
 	border-radius: 3px;
 	background-color: $color-lightgrey;
@@ -138,6 +138,7 @@ figure {
 }
 
 .img-col, .tag-links {
+	display: -ms-flexbox;
 	@include flex-row(column);
 }
 
@@ -169,6 +170,10 @@ figure {
 
 #label-1, #label-2, .tag-section a {
 	color: $color-pink;
+}
+
+.tag-section {		
+	max-height: 118px;		/* fixed IE 10 bug */
 }
 
 .tag-section a, {
