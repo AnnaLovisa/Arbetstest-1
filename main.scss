@@ -141,7 +141,7 @@ figure {
 
 .img-col, .tag-links {
 	display: -ms-flexbox;
-	flex-direction: -ms-column;
+	-ms-flex-direction: column;
 	@include flex-row(column);
 }
 
